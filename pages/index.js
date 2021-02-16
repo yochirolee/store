@@ -2,8 +2,12 @@ import Head from "next/head";
 import Image from "next/image";
 import LoginExternal from "../components/Login/loginExternal";
 import LoginForm from "../components/Login/loginForm";
+import RegisterForm from "../components/Login/registerForm";
+import React, { useState } from "react";
 
 export default function Home() {
+  const [asAccount, setAsAccount] = useState(true);
+
   return (
     <div>
       <Head>
@@ -16,7 +20,9 @@ export default function Home() {
             <h3 className="text-5xl mb-6  text-gray-700 tracking-tight font-semibold ">
               Vender tu Iphone,
             </h3>
-            <h4 className="text-2xl text-gray-500 font-semibold">nunca ha sido tan sencillo</h4>
+            <h4 className="text-2xl text-gray-500 font-semibold">
+              nunca ha sido tan sencillo
+            </h4>
           </div>
           <div className="object-contain place-items-end	">
             <Image
@@ -30,15 +36,18 @@ export default function Home() {
 
         <div className="flex  container h-screen">
           <div className="flex flex-col  mx-auto my-auto">
-            <LoginForm />
-            <div className="text-center mt-4">
-              <p>
-                No tienes cuenta?{" "}
-                <span>
-                  <a className="text-blue-400 mx-4 cursor-pointer">Registrate</a>
-                </span>
-              </p>
-            </div>
+            {asAccount ? (
+              <>
+                <LoginForm asAccount={asAccount} setAsAccount={setAsAccount} />
+              </>
+            ) : (
+              <>
+                <RegisterForm
+                  asAccount={asAccount}
+                  setAsAccount={setAsAccount}
+                />
+              </>
+            )}
 
             <div className="mt-4 border-t">
               <LoginExternal />
