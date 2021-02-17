@@ -1,12 +1,14 @@
-import PhoneImage from "./phoneImage"
+import PhoneImage from "./phoneImage";
+import React, { useContext } from "react";
+import { SelectedModelContext } from "../../../context/selectedModelContext";
 
+export default function HomeLeft() {
+  const [state, dispatch] = useContext(SelectedModelContext);
 
-export default function HomeLeft({selectedModel}) {
-  console.log(selectedModel)
   return (
     <div className="text-center aling-middle">
-      <h4 className='text-2xl my-4'>{selectedModel.model}</h4>
-       <PhoneImage selectedModel={selectedModel}/>
+      <h4 className="text-2xl my-4"></h4>
+      <PhoneImage selectedModel={state.selectedModel} />
     </div>
   );
 }

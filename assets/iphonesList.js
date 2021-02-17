@@ -47,7 +47,7 @@ export const iPhoneList = [
       },
     ],
     storage: [
-      { id: 1, storage: 64, isActive: false },
+      { id: 1, storage: 64, isActive: true },
       { id: 2, storage: 128, isActive: false },
       { id: 3, storage: 256, isActive: false },
     ],
@@ -93,7 +93,7 @@ export const iPhoneList = [
       },
     ],
     storage: [
-      { id: 1, storage: 64, isActive: false },
+      { id: 1, storage: 64, isActive: true },
       { id: 2, storage: 128, isActive: false },
       { id: 3, storage: 256, isActive: false },
     ],
@@ -139,7 +139,7 @@ export const iPhoneList = [
       },
     ],
     storage: [
-      { id: 1, storage: 64, isActive: false },
+      { id: 1, storage: 64, isActive: true },
       { id: 2, storage: 128, isActive: false },
       { id: 3, storage: 256, isActive: false },
     ],

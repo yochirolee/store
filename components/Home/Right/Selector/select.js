@@ -1,9 +1,8 @@
 export default function Select({ iPhoneList, handlePhoneSelect }) {
-
   return (
     <div>
       <select
-        onChange={(e)=>handlePhoneSelect(e)}
+        onChange={(e) => handlePhoneSelect(e)}
         className="w-56 bg-gray-50 h-8 my-4"
         name="select"
       >

@@ -5,30 +5,9 @@ import NavBar from "../components/NavBar/navBar";
 import HomeRight from "../components/Home/Right/homeRight";
 import HomeLeft from "../components/Home/Left/homeLeft";
 import { iPhoneList } from "../assets/iphonesList";
+import { SelectedModelProvider } from "../context/selectedModelContext";
+
 export default function Home() {
-  const [selectedModel, setSelectedModel] = useState(iPhoneList[0]);
-
-  const [colorId, setColorId] = useState(1);
-
-  const handleColorChange = (id) => {
-    selectedModel.data.map((item) => {
-      if (item.id === id) {
-        item.isActive = true;
-      } else {
-        item.isActive = false;
-      }
-    });
-    setColorId(id);
-  };
-
-  const handlePhoneSelect = async (e) => {
-    const id = e.target.value;
-    const selected = await iPhoneList.find(
-      (phone) => phone.id === parseInt(id)
-    );
-    setSelectedModel(selected);
-  };
-
   return (
     <Fragment>
       <Head>
@@ -37,13 +16,10 @@ export default function Home() {
       </Head>
       <NavBar />
       <div className="grid grid-cols-2 place-items-center h-almost w-4/6 mx-auto ">
-        <HomeLeft selectedModel={selectedModel}  />
-        <HomeRight
-          iPhoneList={iPhoneList}
-          selectedModel={selectedModel}
-          handlePhoneSelect={handlePhoneSelect}
-          handleColorChange={handleColorChange}
-        />
+        <SelectedModelProvider>
+          <HomeLeft />
+          <HomeRight iPhoneList={iPhoneList} />
+        </SelectedModelProvider>
       </div>
     </Fragment>
   );
