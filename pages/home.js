@@ -1,10 +1,8 @@
 import { Fragment } from "react";
-import React, { useState } from "react";
 import Head from "next/head";
 import NavBar from "../components/NavBar/navBar";
 import HomeRight from "../components/Home/Right/homeRight";
 import HomeLeft from "../components/Home/Left/homeLeft";
-import { iPhoneList } from "../assets/iphonesList";
 import { SelectedModelProvider } from "../context/selectedModelContext";
 
 export default function Home() {
@@ -18,7 +16,7 @@ export default function Home() {
       <div className="grid grid-cols-2 place-items-center h-almost w-4/6 mx-auto ">
         <SelectedModelProvider>
           <HomeLeft />
-          <HomeRight iPhoneList={iPhoneList} />
+          <HomeRight/>
         </SelectedModelProvider>
       </div>
     </Fragment>

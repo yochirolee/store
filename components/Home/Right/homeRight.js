@@ -18,6 +18,8 @@ export default function HomeRight() {
     dispatch({ type: "change", payload: selected });
   };
 
+ 
+
   const handleColorChange = (id) => {
     const auxSelected = { ...state.selectedModel };
     auxSelected.data.map((item) => {

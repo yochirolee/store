@@ -15,26 +15,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="md:container md:mx-auto h-screen grid grid-cols-2 gap-2 ">
-        <div className="grid grid-rows-2 h-screen text-center ">
-          <div className="flex flex-col my-auto">
-            <h3 className="text-5xl mb-6  text-gray-700 tracking-tight font-semibold ">
+        <div className="flex flex-col text-center ">
+          <div className="flex flex-col flex-1 mt-32">
+            <h3 className="text-5xl mb-4  text-gray-800 tracking-tight font-semibold ">
               Vender tu Iphone,
             </h3>
-            <h4 className="text-2xl text-gray-500 font-semibold">
+            <h4 className="text-2xl text-gray-700 font-semibold">
               nunca ha sido tan sencillo
             </h4>
+            <span className='text-blue-600 font-bold mt-4'>Mas Info</span>
           </div>
-          <div className="object-contain place-items-end	">
+          <div className="place-items-end	">
             <Image
               alt="Iphones Picture"
               src="/switch_to_iphone.jpg"
               width="500px"
-              height="400px"
+              height="450px"
             ></Image>
           </div>
         </div>
 
-        <div className="flex  container h-screen">
+        <div className="flex  container">
           <div className="flex flex-col  mx-auto my-auto">
             {asAccount ? (
               <>

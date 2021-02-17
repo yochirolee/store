@@ -19,12 +19,19 @@ body {
   --swatch-spacegray: #b1b2b7;
   --swatch-silver: #e4e4e2;
   --swatch-blue: #023b63;
+  --swatch-blue-2: #0071e3;
   --swatch-green: #d8efd5;
+  --swatch-green-2: #aee1cd;
   --swatch-red: #d82e2e;
+  --swatch-coral: #ff6e5a;
   --swatch-white: #f5f5f7;
+  --swatch-white-2: #f9f6ef;
   --swatch-pacificblue: #2d4e5c;
   --swatch-graphite: #52514d;
   --swatch-black: #25212b;
+  --swatch-midnightgreen: #4e5851;
+  --swatch-purple: #d1cdda;
+  --swatch-yellow: #ffe681;
 }
 
 .colors-container {
@@ -122,8 +129,14 @@ body {
 .colornav-swatch-blue {
   background-color: var(--swatch-blue);
 }
+.colornav-swatch-blue-2 {
+  background-color: var(--swatch-blue-2);
+}
 .colornav-swatch-green {
   background-color: var(--swatch-green);
+}
+.colornav-swatch-green-2 {
+  background-color: var(--swatch-green-2);
 }
 
 .colornav-swatch-pacificblue {
@@ -139,4 +152,19 @@ body {
 
 .colornav-swatch-white {
   background-color: var(--swatch-white);
+}
+.colornav-swatch-white-2 {
+  background-color: var(--swatch-white-2);
+}
+.colornav-swatch-midnightgreen {
+  background-color: var(--swatch-midnightgreen);
+}
+.colornav-swatch-purple {
+  background-color: var(--swatch-purple);
+}
+.colornav-swatch-yellow {
+  background-color: var(--swatch-yellow);
+}
+.colornav-swatch-coral {
+  background-color: var(--swatch-coral);
 }
