@@ -13,10 +13,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
-      <div className="grid grid-cols-2 place-items-center h-almost w-4/6 mx-auto ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center h-almost sm:w-full md:w-4/6 mx-auto ">
         <SelectedModelProvider>
           <HomeLeft />
-          <HomeRight/>
+          <HomeRight />
         </SelectedModelProvider>
       </div>
     </Fragment>
