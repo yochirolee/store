@@ -16,14 +16,14 @@ export default function Home() {
       </Head>
       <div className="md:container md:mx-auto h-screen grid md:grid-cols-2 md:gap-2 ">
         <div className="flex flex-col text-center ">
-          <div className="flex flex-col flex-1 mt-32">
+          <div className="flex flex-col flex-1 mt-20 md:mt-32">
             <h3 className="text-5xl mb-4  text-gray-800 tracking-tight font-semibold ">
               Vender tu Iphone,
             </h3>
             <h4 className="text-2xl text-gray-700 font-semibold">
               nunca ha sido tan sencillo
             </h4>
-            <span className='text-blue-600 font-bold mt-4'>Mas Info</span>
+            <span className='text-blue-600 font-bold md:mt-4'>Mas Info</span>
           </div>
           <div className="place-items-end hidden md:block	">
             <Image
