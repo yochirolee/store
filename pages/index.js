@@ -14,7 +14,7 @@ export default function Home() {
         <title>Vende tu Iphone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="md:container md:mx-auto h-screen grid grid-cols-2 gap-2 ">
+      <div className="md:container md:mx-auto h-screen grid md:grid-cols-2 md:gap-2 ">
         <div className="flex flex-col text-center ">
           <div className="flex flex-col flex-1 mt-32">
             <h3 className="text-5xl mb-4  text-gray-800 tracking-tight font-semibold ">
@@ -25,7 +25,7 @@ export default function Home() {
             </h4>
             <span className='text-blue-600 font-bold mt-4'>Mas Info</span>
           </div>
-          <div className="place-items-end	">
+          <div className="place-items-end hidden md:block	">
             <Image
               alt="Iphones Picture"
               src="/switch_to_iphone.jpg"
