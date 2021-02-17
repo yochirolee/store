@@ -29,8 +29,8 @@ export default function Home() {
             <Image
               alt="Iphones Picture"
               src="/switch_to_iphone.jpg"
-              width="500px"
-              height="450px"
+              width="475px"
+              height="420px"
             ></Image>
           </div>
         </div>
