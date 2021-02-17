@@ -36,8 +36,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
-      <div className="grid grid-cols-2 place-items-center h-almost align-middle">
-        <HomeLeft selectedModel={selectedModel} />
+      <div className="grid grid-cols-2 place-items-center h-almost w-4/6 mx-auto ">
+        <HomeLeft selectedModel={selectedModel}  />
         <HomeRight
           iPhoneList={iPhoneList}
           selectedModel={selectedModel}
