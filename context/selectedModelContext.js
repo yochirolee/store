@@ -1,4 +1,4 @@
-import React, { useState, createContext, useReducer } from "react";
+import React, { createContext, useReducer } from "react";
 import { iPhoneList } from "../assets/iphonesList";
 
 const initialState = {

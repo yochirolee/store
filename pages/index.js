@@ -23,7 +23,7 @@ export default function Home() {
             <h4 className="text-2xl text-gray-700 font-semibold">
               nunca ha sido tan sencillo
             </h4>
-            <span className='text-blue-600 font-bold md:mt-4'>Mas Info</span>
+            <span className="text-blue-600 font-bold md:mt-4">Mas Info</span>
           </div>
           <div className="place-items-end hidden md:block	">
             <Image

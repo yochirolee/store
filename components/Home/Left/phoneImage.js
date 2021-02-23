@@ -8,7 +8,7 @@ export default function PhoneImage({ selectedModel }) {
     <Image
       className="align-middle inline-block"
       src={`/iphones/compare_${item.picture}.jpg`}
-      alt="exit"
+      alt="phone"
       height={selectedModel.height}
       width={selectedModel.width}
     ></Image>
