@@ -10,14 +10,12 @@ export default function Layout({ children }) {
         <title>Vende tu Iphone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {session ? (
+      
         <>
           <NavBar />
           {children}
         </>
-      ) : (
-        <></>
-      )}
+     
     </>
   );
 }
