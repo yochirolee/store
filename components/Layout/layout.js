@@ -3,7 +3,7 @@ import { useSession } from "next-auth/client";
 import Head from "next/head";
 
 export default function Layout({ children }) {
-  const [session] = useSession();
+  const [session] = true;
   return (
     <>
       <Head>
