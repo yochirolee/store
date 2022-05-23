@@ -3,7 +3,7 @@ import { useSession } from "next-auth/client";
 import Head from "next/head";
 
 export default function Layout({ children }) {
-  const [session] = true;
+ 
   return (
     <>
       <Head>
@@ -11,11 +11,8 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-        <>
-          <NavBar />
           {children}
-        </>
-     
+      
     </>
   );
 }
